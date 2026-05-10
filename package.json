@@ -1,0 +1,27 @@
+{
+  "name": "hotel-price-scraper",
+  "version": "1.0.0",
+  "description": "Web scraper to find lowest listing price for 5-star hotels",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "scrape": "node src/index.js",
+    "install-browsers": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "^16.6.1",
+    "playwright": "^1.44.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "web-scraper",
+    "hotel",
+    "playwright",
+    "sdet"
+  ],
+  "author": "",
+  "license": "MIT"
+}
