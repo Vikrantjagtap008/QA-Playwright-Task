@@ -1,10 +1,3 @@
-/**
- * Hotel Price Scraper - SDET Assessment
- *
- * Finds the lowest listing price for a 5-night stay at the
- * highest-rated 5-star hotel in a given city for 2 adults + 1 infant (<2 yrs).
- * Currency: INR
- */
 
 require("dotenv").config();
 const { chromium } = require("playwright");
@@ -13,7 +6,6 @@ const { searchGoibibo } = require("./scrapers/goibibo");
 const { displayResults } = require("./utils/display");
 const { getDateRange } = require("./utils/dates");
 
-// ─── CLI Config ────────────────────────────────────────────────────────────────
 const CITY = process.argv[2] || "Mumbai";
 const { checkIn, checkOut } = getDateRange();
 
